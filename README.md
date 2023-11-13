@@ -10,10 +10,18 @@
 
 3. Open new terminal and `chruby 3.1.3`
     - troubleshoot by checking out ruby version: `ruby -v`
+
 ##### Fedora
-Install ruby and development tools (preferably in a [toolbx]*(https://containertoolbx.org) or [distrobox](https://github.com/89luca89/distrobox) container):
+It is optional but recommended to install the following packages in a [toolbx](https://containertoolbx.org) or [distrobox](https://github.com/89luca89/distrobox) container environment.
+
+Install the jekyll rubygem (which will also install ruby):
 ```bash
-sudo dnf install ruby rubygems ruby-devel gcc gcc-c++ rpm-build
+sudo dnf install rubygem-jekyll
+```
+
+To enable optional support for asciidoc:
+```bash
+sudo dnf install rubygem-jekyll-asciidoc
 ```
 
 #### Fork and clone the repo:
